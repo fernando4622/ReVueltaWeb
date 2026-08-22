@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { LifecycleJourney } from "./components/lifecycle-journey";
 import { SiteHeader } from "./components/site-header";
 
 const sectionLabelClass =
@@ -174,7 +175,7 @@ export default function Home() {
 
         <section
           className="grid grid-cols-[minmax(320px,0.82fr)_minmax(430px,1.18fr)] items-center gap-[clamp(4rem,8vw,10rem)] bg-paper-bright px-[6vw] py-[clamp(6rem,11vw,11rem)] max-[900px]:grid-cols-1 max-[520px]:px-5 max-[520px]:py-[5.5rem]"
-          id="how-it-works"
+          id="circular-idea"
           aria-labelledby="circular-title"
         >
           <div className="max-[900px]:max-w-[700px]">
@@ -213,6 +214,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <LifecycleJourney />
 
         <section
           className="flex min-h-[150px] items-center justify-between border-t border-line px-[6vw] py-8 text-ink max-[520px]:min-h-[120px] max-[520px]:px-5 max-[520px]:py-6"
