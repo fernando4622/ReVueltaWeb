@@ -12,6 +12,11 @@
   --color-line: rgba(23, 63, 50, 0.2);
   --font-sans: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
+  --animate-lifecycle: lifecycle-travel 12s linear infinite;
+
+  @keyframes lifecycle-travel {
+    to { stroke-dashoffset: -1; }
+  }
 }
 
 a:focus-visible,
