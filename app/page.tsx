@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { ContainerIdentity } from "./components/container-identity";
 import { LifecycleJourney } from "./components/lifecycle-journey";
 import { SiteHeader } from "./components/site-header";
 
@@ -216,6 +217,8 @@ export default function Home() {
         </section>
 
         <LifecycleJourney />
+
+        <ContainerIdentity />
 
         <section
           className="flex min-h-[150px] items-center justify-between border-t border-line px-[6vw] py-8 text-ink max-[520px]:min-h-[120px] max-[520px]:px-5 max-[520px]:py-6"
